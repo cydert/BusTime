@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="ショートカット設定">
+        <CheckBoxPreference
+            android:key="swipe"
+            android:title="スワイプで時刻表前後"
+            android:summaryOn="設定ON"
+            android:summaryOff="設定OFF"
+            android:defaultValue="true"
+        />
+        <ListPreference
+            android:key="setSwipe"
+            android:title="スワイプ時の感度"
+            android:entries="@array/swipe_list"
+            android:entryValues="@array/swipe_value"
+            android:dialogTitle="選択してください"
+            android:defaultValue="2"
+            android:summary="%s"
+            >
+        </ListPreference>
+            </PreferenceCategory>
+        <ListPreference
+            android:key="reNew"
+            android:title="更新確認時の動作(一部未実装)"
+            android:entries="@array/entries_list"
+            android:entryValues="@array/entryvalues_list"
+            android:dialogTitle="選択してください"
+            android:defaultValue="4"
+            android:summary="%s"
+            >
+        </ListPreference>
+    <CheckBoxPreference
+        android:key="firstReNew"
+        android:title="起動時に更新確認をする"
+        android:summaryOn="確認する"
+        android:summaryOff="確認しない"
+        android:defaultValue="false"
+        >
+    </CheckBoxPreference>
+
+    <PreferenceCategory android:title="カスタムファイル設定">
+        <CheckBoxPreference
+            android:title="カスタム時刻表を表示する"
+            android:summaryOn="現在:表示"
+            android:summaryOff="現在:非表示"
+            android:defaultValue="true"
+            android:key="customFileBool" />
+        <EditTextPreference
+            android:title="カスタム時刻表ボタン名"
+            android:defaultValue="その他"
+            android:key="customFileName"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="その他">
+        <PreferenceScreen
+            android:key="version"
+            android:title="バージョン情報"
+            />
+        <PreferenceScreen
+            android:title="ヘルプ"
+            android:summary="公式サイトに接続します"
+            android:key="toHP">
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+</PreferenceScreen>

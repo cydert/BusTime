@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saidat.bustime">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_bus_time"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.saidat.bustime.goto_tokuyamaeki_01"
+            android:label="@string/title_goto_tokuyamaeki_01">
+
+        </activity>
+
+        <activity android:name="com.saidat.bustime.BusSearch01"
+            android:label="選択">
+        </activity>
+
+        <activity android:name="com.saidat.bustime.SearchList001"
+            android:label="検索">
+        </activity>
+
+        <activity android:name=".busTimeList"
+            android:label="時刻表一覧">
+        </activity>
+
+        <activity android:name=".MyPreferenceActivity"
+            android:label="設定">
+        </activity>
+        <activity
+            android:name=".makeCompany"
+            android:label="自作"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".data">
+        </activity>
+        <activity android:name=".delMenu">
+        </activity>
+        <activity android:name=".DataDl">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+
+
+
+
+</manifest>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarEdCom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base_ToolbarStyle">
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbarEdCom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    !-->
+<!-- /ThemeOverlay.AppCompat.Dark
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+                    android:theme="@style/Bar"
+            !-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView2" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="あ行"
+                                android:id="@+id/listJPTx" />
+
+                            <Button
+                                android:layout_width="39dp"
+                                android:layout_height="wrap_content"
+                                android:text="▽"
+                                android:id="@+id/listJPBt"
+                                android:textSize="20dp" />
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全削除"
+                                android:id="@+id/allDel"
+                                android:visibility="gone" />
+
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="101dp"
+                                android:layout_height="wrap_content"
+                                android:text="削除"
+                                android:id="@+id/del"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="駅名"
+                                android:id="@+id/textView15"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="読み込み"
+                                android:id="@+id/readBt"
+                                android:layout_weight="0.15" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/stationEdMc"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:hint="駅名を入力するか読み込んでださい"
+                                android:inputType="text" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="全体の注意事項"
+                            android:id="@+id/attantion"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/attantionEdMc"
+                            android:inputType="text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="経由地"
+                            android:id="@+id/textView16"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/keiyuEdMc"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="目的地(行先)"
+                            android:id="@+id/textView17"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mokutekiEdMc"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="発車時間"
+                            android:id="@+id/textView18"
+                            android:layout_gravity="center_horizontal" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="time"
+                                android:ems="10"
+                                android:id="@+id/fsTimeEdMc"
+                                android:layout_gravity="center_horizontal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="時"
+                                android:id="@+id/textView20" />
+
+                            <EditText
+                                android:layout_width="167dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="time"
+                                android:ems="10"
+                                android:id="@+id/fsTime2EdMc" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="分"
+                                android:id="@+id/textView21" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="注意マーク"
+                            android:id="@+id/textView19"
+                            android:layout_gravity="center_horizontal" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/markEdMc"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:id="@+id/llMoveBt"
+                android:weightSum="1.5">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前の時間帯へ"
+                    android:id="@+id/backBtMc"
+                    android:layout_weight="0.2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:id="@+id/saveBrMc"
+                    android:layout_weight="0.2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次の時間帯へ"
+                    android:id="@+id/nextBtMc"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="1"
+                    android:id="@+id/page"
+                    android:layout_weight="0.3"
+                    android:gravity="bottom|right"
+                    android:layout_marginRight="-5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

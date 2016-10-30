@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#fffffff0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/allView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="253dp"
+                android:layout_height="match_parent"
+                android:id="@+id/hlScrollView1"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/BusName01"
+                    android:background="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="バス停"
+                    android:autoText="false" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="曜日"
+                android:id="@+id/txWeek01"
+                android:layout_gravity="bottom|right"
+                android:textSize="25dp"
+                android:background="#ffffffff" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.39"
+            android:id="@+id/ScrollView3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txInfo"
+                android:layout_gravity="center_horizontal" />
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="177dp"
+            android:id="@+id/ScrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff0f8ff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll01">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:id="@+id/stNEXTBUS01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/Mark1"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ff0101" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                >
+                <Space
+                    android:layout_width="42.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.36"
+                    />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:id="@+id/Bhour01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:id="@+id/stTIME01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:id="@+id/Btime01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:id="@+id/stMIN01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="28dp" android:id="@+id/Keiyu01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:layout_gravity="right"
+                    android:id="@+id/stKEIYU01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0">
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="28dp"
+                    android:id="@+id/Ikisaki01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:layout_gravity="right"
+                    android:id="@+id/stIKISAKI01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txFill"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="177dp"
+            android:id="@+id/ScrollView2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff0f8ff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:id="@+id/stNEXTBUS02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/Mark2"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ff0101" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0">
+                    <Space
+                        android:layout_width="27.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.36" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="35.0dip"
+                        android:id="@+id/Bhour02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="35.0dip"
+                        android:id="@+id/stTIME02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textIsSelectable="false" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="35.0dip"
+                        android:id="@+id/Btime02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textIsSelectable="false" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="35.0dip"
+                        android:id="@+id/stMIN02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="28dp"
+                        android:id="@+id/Keiyu02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="35.0dip"
+                        android:layout_gravity="right"
+                        android:id="@+id/stKEIYU02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="28dp"
+                    android:id="@+id/Ikisaki02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="35.0dip"
+                    android:layout_gravity="right"
+                    android:id="@+id/stIKISAKI02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+            <Button
+                android:textSize="15dp"
+                android:layout_gravity="left"
+                android:id="@+id/btChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backNext">
+
+                <Button
+                    android:id="@+id/btBack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back" style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="0.5" />
+
+                <Button
+                    android:id="@+id/btNext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next" style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lStationLister">
+
+                <Button
+                    android:id="@+id/btLastStation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last" style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="0.5" />
+
+                <Button
+                    android:id="@+id/btLister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lister" style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

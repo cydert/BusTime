@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_list">
+        <item>更新があれば全データ更新</item>
+        <item>所持データ更新があればそのデータ(会社)のみ更新</item>
+        <item>未所持データがあればそのデータのみ取得</item>
+        <item>更新確認のみ</item>
+    </string-array>
+
+    <string-array name="entryvalues_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="swipe_list">
+        <item>低感度</item>
+        <item>中感度</item>
+        <item>高感度</item>
+    </string-array>
+    <string-array name="swipe_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

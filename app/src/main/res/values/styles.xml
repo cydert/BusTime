@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="Bar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- ToolBar 背景色 -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!-- ToolBar タイトル色 -->
+        <!-- <item name="android:textColorPrimary">@android:color/holo_orange_dark</item> !-->
+        <!-- ToolBar のOverflow アイコン色 -->
+        <item name="android:textColorSecondary">@android:color/holo_red_dark</item>
+
+        <item name="android:textColorPrimary">#0000ff</item>
+        <item name="actionMenuTextColor">#00ff00</item>
+
+    </style>
+<!--         <item name="android:background">@android:color/background_dark</item>
+            <item name="android:background">@android:color/black</item>!-->
+    <style name="Base_ToolbarStyle">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="android:theme">@style/Theme.AppCompat.NoActionBar</item>
+        <item name="titleTextAppearance">@android:color/white</item>
+        <item name="subtitleTextAppearance">@android:color/holo_orange_dark</item>
+    </style>
+
+</resources>
